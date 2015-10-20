@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/wallpapers_a_03">
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#46ffffff"
+        android:layout_marginTop="20dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -17,6 +20,40 @@
             android:text="@string/baac"
             android:id="@+id/textView"
             android:textSize="@dimen/h1"
-            android:layout_gravity="center" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#90ffffff" />
+
+        <ImageView
+            android:layout_width="@dimen/logo"
+            android:layout_height="@dimen/logo"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_carabao" />
+
+        <EditText
+            android:layout_width="@dimen/logo"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/user"
+            android:inputType="text"
+            android:textColorHint="#a4ffffff" />
+
+        <EditText
+            android:layout_width="@dimen/logo"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:textColorHint="#a4ffffff" />
     </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickLogin"
+        android:text="Login"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>
