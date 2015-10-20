@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     //Explicit
     private UserTABLE objUserTABLE;
     private FoodTABLE objFoodTABLE;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
