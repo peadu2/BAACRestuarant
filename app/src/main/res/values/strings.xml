@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BAAC Restaurant</string>
+
+    <string name="user">user :</string>
+    <string name="pass">Password :</string>
+    <string name="baac">ธกส :</string>
 </resources>
